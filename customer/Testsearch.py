@@ -3,6 +3,11 @@ from customer.search import Search
 from customer.customer import Customer
 
 class TestSearch(unittest.TestCase):
+    
+    @classmethod
+    def setUpclass(self):
+        pass
+    
     def setUp(self):
         print('Set up of search module initiating')
         self.cust1 = Customer()
@@ -27,5 +32,9 @@ class TestSearch(unittest.TestCase):
 
     def tearDown(self):
         print('Testing of search module completed.')
+        
+    @classmethod
+    def tearDownclass(self):
+        pass
  
 unittest.main(argv=[''], verbosity=2, exit=False)
