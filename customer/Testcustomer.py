@@ -2,6 +2,11 @@ import unittest
 from customer.customer import Customer
 
 class TestCustomer(unittest.TestCase):
+    
+    @classmethod
+    def setUpClass(self):
+        pass
+        
     def setUp(self):
         print('Set up of customer module initiating')
         self.cust1 = Customer()
@@ -23,5 +28,9 @@ class TestCustomer(unittest.TestCase):
 
     def tearDown(self):
         print('Testing of customer module completed.')
+       
+    @classmethod
+    def tearDownClass(self):
+        pass
  
 unittest.main(argv=[''], verbosity=2, exit=False)
