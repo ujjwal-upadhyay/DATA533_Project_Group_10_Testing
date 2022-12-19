@@ -2,6 +2,11 @@ import unittest
 from produce.fruit import Apple, Banana
 
 class TestFruit(unittest.TestCase):
+    
+    @classmethod
+    def setUpClass(self):
+        pass
+    
     def setUp(self):
         print('Set up of fruit module initiating')
         self.apple = Apple(10,24)
@@ -22,5 +27,9 @@ class TestFruit(unittest.TestCase):
 
     def tearDown(self):
         print('Testing of fruit module completed.')
+        
+    @classmethod
+    def tearDownClass(self):
+        pass
  
 unittest.main(argv=[''], verbosity=2, exit=False)
