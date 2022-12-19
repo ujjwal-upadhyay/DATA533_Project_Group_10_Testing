@@ -3,6 +3,11 @@ from produce.inventory import Inventory
 from produce.fruit import Fruit
 
 class TestInventory(unittest.TestCase):
+    
+    @classmethod
+    def setUpClass(self):
+        pass
+    
     def setUp(self):
         print('Set up of inventory module initiating')
         self.inv = Inventory()
@@ -22,5 +27,9 @@ class TestInventory(unittest.TestCase):
 
     def tearDown(self):
         print('Testing of inventory module completed.')
+    
+    @classmethod
+    def tearDownClass(self):
+        pass
  
 unittest.main(argv=[''], verbosity=2, exit=False)
