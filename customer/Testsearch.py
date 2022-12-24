@@ -1,6 +1,10 @@
+import sys
+
+sys.path.append("..")
+
 import unittest
-from customer.search import Search 
-from customer.customer import Customer
+from customer.Search import Search 
+from customer.Customer import Customer
 
 class TestSearch(unittest.TestCase):
     
