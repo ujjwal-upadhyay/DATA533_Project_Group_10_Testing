@@ -1,5 +1,9 @@
+import sys
+
+sys.path.append("..")
+
 import unittest
-from customer.customer import Customer
+from customer.Customer import Customer
 
 class TestCustomer(unittest.TestCase):
     
