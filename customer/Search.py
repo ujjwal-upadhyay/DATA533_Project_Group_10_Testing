@@ -31,7 +31,7 @@ class Search(Inventory):
             sale_price = num * self.dict[name].price
             all_price =all_price+ sale_price
         if all_price <= float(self.customer.budget):
-            print(f'You have spent {all_price} dollars, and left {float(self.customer.budget)-all_price} dollars.')
+            #print(f'You have spent {all_price} dollars, and left {float(self.customer.budget)-all_price} dollars.')
             return True,all_price
         else:
             print(f'Total price is {all_price} dollars, over budget for{all_price-float(self.customer.budget)}dollars.')
