@@ -1,3 +1,7 @@
+import sys
+
+sys.path.append("..")
+
 import unittest
 from produce.inventory import Inventory
 from produce.fruit import Fruit
