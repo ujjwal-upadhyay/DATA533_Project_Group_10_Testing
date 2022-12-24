@@ -1,4 +1,8 @@
-from produce.Fruit import Apple, Banana, Pear, Orange, Grape
+import sys
+
+sys.path.append("..")
+
+from produce.fruit import Apple, Banana, Pear, Orange, Grape
 
 class Inventory():
     def __init__(self):
