@@ -38,7 +38,7 @@ class Search(Inventory):
             return False,all_price
     def fruit_detail(self,name):
         if name in self.dict:
-            print(f'fruits {name}, price {self.dict[name].price}, inventory {self.dict[name].inventory}')
+            #print(f'fruits {name}, price {self.dict[name].price}, inventory {self.dict[name].inventory}')
             return True
         print("Sorry, we don't have this kind of fruits.")
         return False
