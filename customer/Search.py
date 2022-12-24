@@ -34,7 +34,7 @@ class Search(Inventory):
             #print(f'You have spent {all_price} dollars, and left {float(self.customer.budget)-all_price} dollars.')
             return True,all_price
         else:
-            print(f'Total price is {all_price} dollars, over budget for{all_price-float(self.customer.budget)}dollars.')
+            #print(f'Total price is {all_price} dollars, over budget for{all_price-float(self.customer.budget)}dollars.')
             return False,all_price
     def fruit_detail(self,name):
         if name in self.dict:
