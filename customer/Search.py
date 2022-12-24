@@ -31,14 +31,14 @@ class Search(Inventory):
             sale_price = num * self.dict[name].price
             all_price =all_price+ sale_price
         if all_price <= float(self.customer.budget):
-            #print(f'You have spent {all_price} dollars, and left {float(self.customer.budget)-all_price} dollars.')
+            print(f'You have spent {all_price} dollars, and left {float(self.customer.budget)-all_price} dollars.')
             return True,all_price
         else:
-            #print(f'Total price is {all_price} dollars, over budget for{all_price-float(self.customer.budget)}dollars.')
+            print(f'Total price is {all_price} dollars, over budget for{all_price-float(self.customer.budget)}dollars.')
             return False,all_price
     def fruit_detail(self,name):
         if name in self.dict:
-            #print(f'fruits {name}, price {self.dict[name].price}, inventory {self.dict[name].inventory}')
+            print(f'fruits {name}, price {self.dict[name].price}, inventory {self.dict[name].inventory}')
             return True
         print("Sorry, we don't have this kind of fruits.")
         return False
