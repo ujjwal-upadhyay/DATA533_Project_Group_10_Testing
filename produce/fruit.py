@@ -10,12 +10,12 @@ class Fruit():
 
 #search price
     def get_price(self):
-        #print(f'fruit {self.name}, price {self.price}')
+        print(f'fruit {self.name}, price {self.price}')
         return self.price*self.discount
 
 # search discount
     def get_discount(self):
-        #print(f'fruit {self.name}, discount {self.discount}')
+        print(f'fruit {self.name}, discount {self.discount}')
         return self.discount
 
 #set discount
@@ -24,12 +24,12 @@ class Fruit():
 
 #search expiry time
     def get_expiry(self):
-        #print(f'fruit {self.name}, expire time {self.expiry}')
+        print(f'fruit {self.name}, expire time {self.expiry}')
         return self.expiry
 
 #search inventory
     def get_inventory(self):
-        #print(f'fruit {self.name}, inventory {self.inventory}')
+        print(f'fruit {self.name}, inventory {self.inventory}')
         return self.inventory
 
 #return price
