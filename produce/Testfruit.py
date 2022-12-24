@@ -1,3 +1,7 @@
+import sys
+
+sys.path.append("..")
+
 import unittest
 from produce.fruit import Apple, Banana
 
