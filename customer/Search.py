@@ -1,4 +1,8 @@
-from produce.Inventory import Inventory
+import sys
+
+sys.path.append("..")
+
+from produce.inventory import Inventory
 
 #Inherit Inventory
 class Search(Inventory):
